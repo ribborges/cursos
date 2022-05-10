@@ -1,5 +1,9 @@
 export class Conta{
+    //Public
+    cliente;
     agencia;
+
+    //Private
     _saldo = 0;
 
     sacar(valor){
@@ -13,5 +17,10 @@ export class Conta{
         if(valor <= 0) return;
         
         this.saldo += valor;
+    }
+
+    transferir(valor, conta){
+        const sacado = this.sacar(valor);
+        conta.depositar(sacado);
     }
 }
