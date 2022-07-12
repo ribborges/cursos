@@ -1,0 +1,36 @@
+@import '../abstract/var';
+
+.banner {
+    background: url(../imagens/banner.jpeg) 27% center no-repeat;
+    min-height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inner-banner {
+        padding: 3rem;
+        background-color: $quaternary-color;
+        opacity: 0.8;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+        }
+
+        h1 {
+            font-size: $text-font-size;
+            color: $secondary-color;
+            font-weight: bolder;
+        }
+
+        h2 {
+            font-size: $text-font-size/2;
+            color: $tertiary-color;
+            font-weight: bold;
+        }
+    }
+}

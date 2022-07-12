@@ -1,0 +1,39 @@
+$primary-color: #F806CC;
+$secondary-color: #2E0249;
+$primary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin colors($background-color, $text-color, $font-family) {
+    width: 50%;
+    background-color: $background-color;
+
+    .texto {
+        margin-top: 40%;
+        text-align: center;
+        font-size: 150px;
+        color: $text-color;
+        font-family: $font-family;
+    }
+}
+
+body {
+    @include reset();
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+
+    .esquerdo {
+        @include colors($primary-color, $secondary-color, $primary-font);
+    }
+
+    .direito {
+        @include colors($secondary-color, $primary-color, $secondary-font);
+    }
+}

@@ -1,0 +1,54 @@
+@import '../abstract/var';
+
+#cupom {
+    background-color: $tertiary-color;
+    padding: 4rem;
+    text-align: center;
+
+    .text {
+        color: $primary-color;
+
+        h2 {
+            font-size: $text-font-size/2;
+            margin: 2rem;
+        }
+    }
+
+    .subscription {
+        .input-email {
+            margin: 0 auto;
+            width: 575px;
+    
+            input {
+                border-radius: 5px;
+                width: 540px;
+                height: 50px;
+                outline: none;
+                border-style: none;
+                font-size: 26px;
+                text-align: center;
+                transition: 0.5s;
+    
+                &:hover, &:focus {
+                    background-color: $quaternary-color;
+                }
+            }
+        }
+
+        .btn-sent {
+            text-transform: uppercase;
+            margin: 1rem;
+            outline: none;
+            border-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover, &:focus {
+                background-color: $quaternary-color;
+            }
+        }
+    }
+}

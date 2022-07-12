@@ -1,0 +1,215 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+nav ul li a {
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #711A75;
+}
+
+nav ul li a:hover {
+  border-bottom: 5px solid #711A75;
+}
+
+.banner {
+  background: url(../imagens/banner.jpeg) 27% center no-repeat;
+  min-height: 400px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .inner-banner {
+  padding: 3rem;
+  background-color: #F582A7;
+  opacity: 0.8;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.banner .inner-banner img {
+  -webkit-filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+          filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.banner .inner-banner h1 {
+  font-size: 4rem;
+  color: #711A75;
+  font-weight: bolder;
+}
+
+.banner .inner-banner h2 {
+  font-size: 2rem;
+  color: #F10086;
+  font-weight: bold;
+}
+
+#servicos {
+  margin: 80px;
+}
+
+#servicos h3 {
+  font-size: 1.6rem;
+  color: #711A75;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+}
+
+#servicos h4 {
+  font-size: 2rem;
+  color: #711A75;
+  text-align: center;
+  padding: 20px;
+}
+
+#servicos .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#servicos .cards h5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 5px;
+  color: #180A0A;
+}
+
+#servicos .cards p {
+  font-weight: 300;
+  color: #180A0A;
+  line-height: 1.5;
+}
+
+#servicos .cards .card {
+  width: 360px;
+  text-align: center;
+}
+
+#servicos .cards .card .card-img {
+  padding-bottom: 5px;
+}
+
+#servicos .cards .card .card-img img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#cupom {
+  background-color: #F10086;
+  padding: 4rem;
+  text-align: center;
+}
+
+#cupom .text {
+  color: #180A0A;
+}
+
+#cupom .text h2 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+#cupom .subscription .input-email {
+  margin: 0 auto;
+  width: 575px;
+}
+
+#cupom .subscription .input-email input {
+  border-radius: 5px;
+  width: 540px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  font-size: 26px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cupom .subscription .input-email input:hover, #cupom .subscription .input-email input:focus {
+  background-color: #F582A7;
+}
+
+#cupom .subscription .btn-sent {
+  text-transform: uppercase;
+  margin: 1rem;
+  outline: none;
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cupom .subscription .btn-sent:hover, #cupom .subscription .btn-sent:focus {
+  background-color: #F582A7;
+}
+
+#curiosidade {
+  padding: 1rem;
+  text-align: center;
+  margin: 5px;
+}
+
+#curiosidade h3 {
+  color: #180A0A;
+  font-size: 1.6rem;
+}
+
+#curiosidade h4 {
+  color: #711A75;
+  font-size: 1.33333rem;
+}
+
+#curiosidade p {
+  margin-top: 5px;
+  color: #180A0A;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  background-color: #711A75;
+  color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#180A0A), color-stop(#711A75), color-stop(#F10086), to(#F582A7));
+  background: linear-gradient(to left, #180A0A, #711A75, #F10086, #F582A7);
+}
+
+footer i {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
